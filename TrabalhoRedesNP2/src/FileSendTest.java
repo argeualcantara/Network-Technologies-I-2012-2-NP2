@@ -8,7 +8,7 @@ import java.util.zip.CheckedOutputStream;
 import javax.swing.JFileChooser;
 
 public class FileSendTest {
-	private String FILE_NAME;
+	private String fileName;
 	public static void main(String[] args) {
 		FileSendTest test = new FileSendTest();
 		JFileChooser jfc = new JFileChooser();
@@ -52,10 +52,10 @@ public class FileSendTest {
 			}
 		}
 	}
-	public String getFILE_NAME() {
-		return FILE_NAME;
+	public String getFilename() {
+		return this.fileName;
 	}
-	public void setFILE_NAME(String fILE_NAME) {
-		FILE_NAME = fILE_NAME;
+	public void setFILE_NAME(String fileName) {
+		this.fileName = fileName;
 	}
 }
